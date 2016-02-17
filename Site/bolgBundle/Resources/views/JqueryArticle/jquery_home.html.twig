@@ -1,0 +1,75 @@
+
+{% extends "::tuto_jquery.html.twig" %}
+
+
+
+
+{%block title%}jQuery Home{% endblock %}
+
+{% block html_content %}
+<h1 style="color:red">jQuery Tutorial</h1>
+								<ul class="w3-pagination w3-border w3-round w3-teal" style="width:100%">
+								<li><a href="{{path('bolg_home')}}" style="float: left" >&#10094; TutorailMe Home</a></li>
+								<li><a href="{{path('bolg_jquery_introductionlist')}}" style="float: right" >Next Chapter&#10095;</a></li>
+								</ul>
+					<table>
+					     <tr>
+						      <td><img style="width:80%" src="{{ asset('bundles/jquery_logo.jpg')}}" /></td>
+							  <td><p style="margin-left:10%">
+							  
+									jQuery is a JavaScript Library.<br>
+
+									jQuery greatly simplifies JavaScript programming.<br>
+
+									jQuery is easy to learn.
+							  
+							  </p></td>
+						 </tr>
+					</table>
+					<h2>&#927; "Try it yourself" Examples in Each Chapter</h2>
+					<p style="margin-left:0%;text-align: justify;">
+						With our online editor, you can edit the code,<br> and click on a button to view the result.
+					</p>
+                    <h3>- Example:</h3>
+					<table class="a">
+					<tr>
+					   <td class="b">
+						
+									$(document).ready(function(){<br>
+									$("p").click(function(){<br>
+									$(this).hide();<br>
+									});<br>
+									});
+						
+					   
+					   </td>
+					</tr>
+					</table>
+					<h2>&#927; jQuery Examples:</h2>
+					<p style="margin-left:0%;text-align: justify;">
+						Learn by examples! At TutorailMe you will find a lot of jQuery examples to edit yourself.
+
+						
+					</p>
+					
+					<h2>&#927; jQuery Quiz Test:</h2>
+					<p style="margin-left:0%;text-align: justify;">
+						Test your jQuery skills at TutorailMe!
+
+						
+					</p>
+					
+					<h2>&#927; jQuery References:</h2>
+					<p style="margin-left:0%;text-align: justify;">
+						At TutorailMe you will find a complete reference of all jQuery objects and methods.
+
+						
+					</p>
+					<ul class="w3-pagination w3-border w3-round w3-teal" style="width:100%">
+								<li><a href="{{path('bolg_home')}}" style="float: left" >&#10094; TutorailMe Home</a></li>
+								<li><a href="{{path('bolg_jquery_introductionlist')}}" style="float: right" >Next Chapter&#10095;</a></li>
+								</ul>
+					<br><br>
+					
+					
+					{% endblock %}

@@ -1,0 +1,23 @@
+
+{% extends "::tuto_css.html.twig" %}
+
+
+
+
+{%block title%}Css Padding{% endblock %}
+
+{% block html_content %}
+<h1 style="color:red">Css Tutorial</h1>
+								<ul class="w3-pagination w3-border w3-round w3-teal" style="width:100%">
+								<li><a href="{{path('bolg_home')}}" style="float: left" >&#10094; TutorailMe Home</a></li>
+								<li><a href="{{path('bolg_html_introductionlist')}}" style="float: right" >Next Chapter&#10095;</a></li>
+								</ul>
+					            <img style="width:100%" src="{{ asset('bundles/construction.jpg')}}" />
+					<ul class="w3-pagination w3-border w3-round w3-teal" style="width:100%">
+								<li><a href="{{path('bolg_home')}}" style="float: left" >&#10094; TutorailMe Home</a></li>
+								<li><a href="{{path('bolg_html_introductionlist')}}" style="float: right" >Next Chapter&#10095;</a></li>
+								</ul>
+					<br><br>
+					
+					
+					{% endblock %}

@@ -1,0 +1,174 @@
+
+{% extends "::tuto_html.html.twig" %}
+
+{%block title%}Html Introduction{% endblock %}
+
+
+{% block html_content %}
+<h1 style="color:red">HTML Introduction</h1>
+								<ul class="w3-pagination w3-border w3-round w3-teal" style="width:100%">
+								<li><a href="{{path('bolg_html_homelist')}}" style="float: left" >&#10094; Previous Chapter</a></li>
+								<li><a href="{{path('bolg_html_basiclist')}}" style="float: right" >Next Chapter&#10095;</a></li>
+								</ul>
+					<br><br>
+					<h2>	&clubs; What is Html? </h2>
+					<p style="margin-left:0%;text-align: justify;">
+								HTML is a markup language for describing web documents (web pages).
+                                  	<p style="margin-left:8%">
+								<br>	&#8226;	&nbsp;HTML stands for Hyper Text Markup Language
+								<br>	&#8226;	&nbsp;A markup language is a set of markup tags
+								<br>	&#8226;	&nbsp;HTML documents are described by HTML tags
+								<br>	&#8226;	&nbsp;Each HTML tag describes different document content
+								</p>
+					</p> 
+                    <h2>	&clubs; HTML Example: </h2>
+					<h3>A small HTML document:</h3>
+					<table class="a">
+					<tr>
+					   <td class="b">
+						
+									&lt;!DOCTYPE html&gt;<br>
+									&lt;html&gt;<br>
+									&lt;head&gt;<br>
+									&lt;title&gt;Page Title&lt;/title&gt;<br>
+									&lt;/head&gt;<br>
+									&lt;body&gt;<br>
+
+									&lt;h1&gt;My First Heading&lt;/h1&gt;<br>
+									&lt;p&gt;My first paragraph.&lt;/p&gt;<br>
+
+									&lt;/body&gt;<br>
+									&lt;/html&gt;<br>
+						
+					   
+					   </td>
+					</tr>
+					</table>
+					<h2>	&clubs; Example Explained:</h2>
+					<p style="margin-left:0%;text-align: justify;">
+								&bull; The DOCTYPE declaration defines the document type to be HTML<br>
+								&bull; The text between &lt;html> and &lt;/html> describes an HTML document<br>
+								&bull; The text between &lt;head> and &lt;/head> provides information about the document<br>
+								&bull; The text between &lt;title> and &lt;/title> provides a title for the document<br>
+								&bull; The text between &lt;body> and &lt;/body> describes the visible page content<br>
+								&bull; The text between &lt;h1> and &lt;/h1> describes a heading<br>
+								&bull; The text between &lt;p> and &lt;/p> describes a paragraph<br>
+							Using this description, a web browser can display a document with a heading and a paragraph.<br>
+
+						
+					</p>
+					
+					<h2>	&clubs; HTML Tags:</h2>
+					<p style="margin-left:0%;text-align: justify;">
+								HTML tags are keywords (tag names) surrounded by angle brackets:
+
+								&lt;tagname> content &lt;/tagname>
+								HTML tags normally come in pairs like &lt;p> and &lt;/p>
+								The first tag in a pair is the start tag, the second tag is the end tag
+								The end tag is written like the start tag, but with a slash before the tag name
+
+						
+					</p>
+					
+					<h2>	&clubs; Web Browsers:</h2>
+					
+					<p style="margin-left:0%;text-align: justify;">
+								The purpose of a web browser (Chrome, IE, Firefox, Safari) is to read HTML documents and display them.
+
+								The browser does not display the HTML tags, but uses them to determine how to display the document:
+                      
+					</p>
+					<img style="100%" src="{{ asset('bundles/browser.jpg')}}" /><br>
+					<h2>	&clubs; HTML Page Structure:</h2>
+					<p style="margin-left:0%;text-align: justify;">
+						Below is a visualization of an HTML page structure:		
+					</p>
+					<img style="width:100%" src="{{ asset('bundles/structure.jpg')}}" /><br>
+					<h2>	&clubs; The &lt;!DOCTYPE> Declaration:</h2>
+					<p style="margin-left:0%;text-align: justify;">
+							The &lt;!DOCTYPE> declaration helps the browser to display a web page correctly.
+
+							There are different document types on the web.
+
+							To display a document correctly, the browser must know both type and version.
+
+							The doctype declaration is not case sensitive. All cases are acceptable:		
+					</p>
+					<table class="a">
+					<tr>
+					   <td class="b">
+						
+									
+									
+									&lt;!DOCTYPE html><br>
+
+									&lt;!DOCTYPE HTML><br>
+
+									&lt;!doctype html><br>
+
+									&lt;!Doctype Html><br>
+						
+					   
+					   </td>
+					</tr>
+					</table><br><br>
+					
+					<h2>	&clubs; Common Declarations:</h2>
+					<h3>- HTML5:</h3>
+					<table class="a">
+					<tr>
+					   <td class="b">
+						
+									
+									
+									&lt;!DOCTYPE html><br>
+
+									
+						
+					   
+					   </td>
+					</tr>
+					</table><br><br>
+					<h3>- HTML 4.01:</h3>
+					<table class="a">
+					<tr>
+					   <td class="b">
+						
+									
+									
+									
+
+									&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+						
+					   
+					   </td>
+					</tr>
+					</table><br><br>
+					<h3>- XHTML 1.0:</h3>
+					<table class="a">
+					<tr>
+					   <td class="b">
+						
+									
+									
+									
+
+									&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+						
+					   
+					   </td>
+					</tr>
+					</table><br><br>
+					<h2>	&clubs; HTML Versions:</h2>
+					<p style="margin-left:0%;text-align: justify;">
+							Since the early days of the web, there have been many versions of HTML:		
+					</p>
+					<img style="width:100%" src="{{ asset('bundles/vrs.jpg')}}" /><br><br>
+								<ul class="w3-pagination w3-border w3-round w3-teal" style="width:100%">
+								<li><a href="{{path('bolg_html_homelist')}}" style="float: left" >&#10094; Previous Chapter</a></li>
+								<li><a href="{{path('bolg_html_basiclist')}}" style="float: right" >Next Chapter&#10095;</a></li>
+								</ul>
+					<br><br>
+					
+					
+					{% endblock %}

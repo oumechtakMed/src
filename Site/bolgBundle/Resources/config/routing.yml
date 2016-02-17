@@ -1,0 +1,482 @@
+#index route
+
+bolg_jjj:
+    pattern:  /home2
+    defaults: { _controller: SitebolgBundle:Default:index }
+
+#principal route
+
+bolg_home:
+    pattern:  /home
+    defaults: { _controller: SitebolgBundle:Principal:home }
+
+#HtmlArticle route
+
+
+
+bolg_html_homelist:
+    pattern: /html_home
+    defaults: {_controller:SitebolgBundle:ArticleHtml:homehtml}
+
+
+bolg_html_introductionlist:
+    pattern: /html_introduction
+    defaults: {_controller:SitebolgBundle:ArticleHtml:introducehtml}
+
+
+bolg_html_basiclist:
+    pattern: /html_basic
+    defaults: {_controller:SitebolgBundle:ArticleHtml:basichtml}
+
+
+bolg_html_elementslist:
+    pattern: /html_elements
+    defaults: {_controller:SitebolgBundle:ArticleHtml:elementshtml}
+
+
+bolg_html_testlist:
+    pattern: /html_test
+    defaults: {_controller:SitebolgBundle:ArticleHtml:testhtml}
+
+
+
+
+#JqueryArticle route
+
+
+
+bolg_jquery_homelist:
+    pattern: /jquery_home
+    defaults: {_controller:SitebolgBundle:ArticleJquery:homejquery}
+
+bolg_jquery_introductionlist:
+    pattern: /jquery_introduction
+    defaults: {_controller:SitebolgBundle:ArticleJquery:introducejquery}
+
+
+bolg_jquery_testlist:
+    pattern: /jquery_test
+    defaults: {_controller:SitebolgBundle:ArticleJquery:testjquery}
+
+
+#JavascriptArticle route
+
+
+
+bolg_javascript_homelist:
+    pattern: /javascript_home
+    defaults: {_controller:SitebolgBundle:ArticleJavascript:homejavascript}
+
+bolg_javascript_introductionlist:
+    pattern: /javascript_introduction
+    defaults: {_controller:SitebolgBundle:ArticleJavascript:introducejavascript}
+
+
+bolg_javascript_testlist:
+    pattern: /javascript_test
+    defaults: {_controller:SitebolgBundle:ArticleJavascript:testjavascript}
+
+
+#CssArticle route
+
+
+
+bolg_css_homelist:
+    pattern: /css_home
+    defaults: {_controller:SitebolgBundle:ArticleCss:homecss}
+
+
+bolg_css_alignlist:
+    pattern: /css_align
+    defaults: {_controller:SitebolgBundle:ArticleCss:aligncss}
+
+
+bolg_css_backgroundslist:
+    pattern: /css_backgrounds
+    defaults: {_controller:SitebolgBundle:ArticleCss:backgroundscss}
+
+bolg_css_borderslist:
+    pattern: /css_borders
+    defaults: {_controller:SitebolgBundle:ArticleCss:borderscss}
+
+
+bolg_css_box_modellist:
+    pattern: /css_box_model
+    defaults: {_controller:SitebolgBundle:ArticleCss:box_modelcss}
+
+
+bolg_css_colorslist:
+    pattern: /css_colors
+    defaults: {_controller:SitebolgBundle:ArticleCss:colorscss}
+
+
+bolg_css_combinatorslist:
+    pattern: /css_combinators
+    defaults: {_controller:SitebolgBundle:ArticleCss:combinatorscss}
+
+
+bolg_css_displaylist:
+    pattern: /css_display
+    defaults: {_controller:SitebolgBundle:ArticleCss:displaycss}
+
+
+bolg_css_dropdownslist:
+    pattern: /css_dropdowns
+    defaults: {_controller:SitebolgBundle:ArticleCss:dropdownscss}
+
+bolg_css_floatlist:
+    pattern: /css_float
+    defaults: {_controller:SitebolgBundle:ArticleCss:floatcss}	
+bolg_css_fontslist:
+    pattern: /css_fonts
+    defaults: {_controller:SitebolgBundle:ArticleCss:fontscss}
+
+
+
+bolg_css_heightlist:
+    pattern: /css_height
+    defaults: {_controller:SitebolgBundle:ArticleCss:heightcss}
+
+
+bolg_css_how_tolist:
+    pattern: /css_how_to
+    defaults: {_controller:SitebolgBundle:ArticleCss:how_tocss}
+
+
+bolg_css_imagelist:
+    pattern: /css_image
+    defaults: {_controller:SitebolgBundle:ArticleCss:imagecss}
+
+
+bolg_css_inlinelist:
+    pattern: /css_inline
+    defaults: {_controller:SitebolgBundle:ArticleCss:inlinecss}
+
+
+bolg_css_introductionlist:
+    pattern: /css_introduction
+    defaults: {_controller:SitebolgBundle:ArticleCss:introductioncss}
+
+
+bolg_css_linkslist:
+    pattern: /css_links
+    defaults: {_controller:SitebolgBundle:ArticleCss:linkscss}
+
+
+bolg_css_listslist:
+    pattern: /css_lists
+    defaults: {_controller:SitebolgBundle:ArticleCss:listscss}
+
+
+bolg_css_marginslist:
+    pattern: /css_margins
+    defaults: {_controller:SitebolgBundle:ArticleCss:marginscss}
+
+
+bolg_css_max_widthlist:
+    pattern: /css_max_width
+    defaults: {_controller:SitebolgBundle:ArticleCss:max_widthcss}
+
+
+bolg_css_navigationlist:
+    pattern: /css_navigation
+    defaults: {_controller:SitebolgBundle:ArticleCss:navigationcss}
+
+
+bolg_css_opacitylist:
+    pattern: /css_opacity
+    defaults: {_controller:SitebolgBundle:ArticleCss:opacitycss}
+
+
+bolg_css_outlinelist:
+    pattern: /css_outline
+    defaults: {_controller:SitebolgBundle:ArticleCss:outlinecss}
+
+
+bolg_css_paddinglist:
+    pattern: /css_padding
+    defaults: {_controller:SitebolgBundle:ArticleCss:paddingcss}
+
+
+bolg_css_positionlist:
+    pattern: /css_position
+    defaults: {_controller:SitebolgBundle:ArticleCss:positioncss}
+
+
+bolg_css_pseudo_classlist:
+    pattern: /css_pseudo_class
+    defaults: {_controller:SitebolgBundle:ArticleCss:pseudo_classcss}
+
+
+bolg_css_pseudo_elementlist:
+    pattern: /css_pseudo_element
+    defaults: {_controller:SitebolgBundle:ArticleCss:pseudo_elementcss}
+
+
+bolg_css_syntaxlist:
+    pattern: /css_syntax
+    defaults: {_controller:SitebolgBundle:ArticleCss:syntaxcss}
+
+
+bolg_css_tableslist:
+    pattern: /css_tables
+    defaults: {_controller:SitebolgBundle:ArticleCss:tablescss}
+
+
+bolg_css_textlist:
+    pattern: /css_text
+    defaults: {_controller:SitebolgBundle:ArticleCss:textcss}
+
+
+bolg_css_tooltipslist:
+    pattern: /css_tooltips
+    defaults: {_controller:SitebolgBundle:ArticleCss:tooltipscss}
+#W3cssArticle route
+
+
+
+bolg_w3css_homelist:
+    pattern: /w3css_home
+    defaults: {_controller:SitebolgBundle:ArticleW3css:homew3css}
+
+bolg_w3css_introductionlist:
+    pattern: /w3css_introduction
+    defaults: {_controller:SitebolgBundle:ArticleW3css:introducew3css}
+
+
+bolg_w3css_testlist:
+    pattern: /w3css_test
+    defaults: {_controller:SitebolgBundle:ArticleW3css:testw3css}
+
+
+#BootstrapArticle route
+
+
+
+bolg_bootstrap_homelist:
+    pattern: /bootstrap_home
+    defaults: {_controller:SitebolgBundle:ArticleBootstrap:homebootstrap}
+
+bolg_bootstrap_introductionlist:
+    pattern: /bootstrap_introduction
+    defaults: {_controller:SitebolgBundle:ArticleBootstrap:introducebootstrap}
+
+
+bolg_bootstrap_testlist:
+    pattern: /bootstrap_test
+    defaults: {_controller:SitebolgBundle:ArticleBootstrap:testbootstrap}
+
+
+#JQuerymobileArticle route
+
+
+
+bolg_jquerymobile_homelist:
+    pattern: /jquerymobile_home
+    defaults: {_controller:SitebolgBundle:ArticleJquerymobile:homejquerymobile}
+
+bolg_jquerymobile_introductionlist:
+    pattern: /jquerymobile_introduction
+    defaults: {_controller:SitebolgBundle:ArticleJquerymobile:introducejquerymobile}
+
+
+bolg_jquerymobile_testlist:
+    pattern: /jquerymobile_test
+    defaults: {_controller:SitebolgBundle:ArticleJquerymobile:testjquerymobile}
+
+#jsonArticle route
+
+
+
+bolg_json_homelist:
+    pattern: /json_home
+    defaults: {_controller:SitebolgBundle:ArticleJson:homejson}
+
+bolg_json_introductionlist:
+    pattern: /json_introduction
+    defaults: {_controller:SitebolgBundle:ArticleJson:introducejson}
+
+
+bolg_json_testlist:
+    pattern: /json_test
+    defaults: {_controller:SitebolgBundle:ArticleJson:testjson}
+
+
+#AngularjsArticle route
+
+
+
+bolg_angularjs_homelist:
+    pattern: /angularjs_home
+    defaults: {_controller:SitebolgBundle:ArticleAngularjs:homeangularjs}
+
+bolg_angularjs_introductionlist:
+    pattern: /angularjs_introduction
+    defaults: {_controller:SitebolgBundle:ArticleAngularjs:introduceangularjs}
+
+
+bolg_angularjs_testlist:
+    pattern: /angularjs_test
+    defaults: {_controller:SitebolgBundle:ArticleAngularjs:testangularjs}
+
+
+#CanvasArticle route
+
+
+
+bolg_canvas_homelist:
+    pattern: /canvas_home
+    defaults: {_controller:SitebolgBundle:ArticleCanvas:homecanvas}
+
+bolg_canvas_introductionlist:
+    pattern: /canvas_introduction
+    defaults: {_controller:SitebolgBundle:ArticleCanvas:introducecanvas}
+
+
+bolg_canvas_testlist:
+    pattern: /canvas_test
+    defaults: {_controller:SitebolgBundle:ArticleCanvas:testcanvas}
+
+
+#SvgArticle route
+
+
+
+bolg_svg_homelist:
+    pattern: /svg_home
+    defaults: {_controller:SitebolgBundle:ArticleSvg:homesvg}
+
+bolg_svg_introductionlist:
+    pattern: /svg_introduction
+    defaults: {_controller:SitebolgBundle:ArticleSvg:introducesvg}
+
+
+bolg_svg_testlist:
+    pattern: /svg_test
+    defaults: {_controller:SitebolgBundle:ArticleSvg:testsvg}
+
+
+#GoogleMapsArticle route
+
+
+
+bolg_googlemaps_homelist:
+    pattern: /googlemaps_home
+    defaults: {_controller:SitebolgBundle:ArticleGooglemaps:homegooglemaps}
+
+bolg_googlemaps_introductionlist:
+    pattern: /googlemaps_introduction
+    defaults: {_controller:SitebolgBundle:ArticleGooglemaps:introducegooglemaps}
+
+
+bolg_googlemaps_testlist:
+    pattern: /googlemaps_test
+    defaults: {_controller:SitebolgBundle:ArticleGooglemaps:testgooglemaps}
+
+
+#SqlArticle route
+
+
+
+bolg_sql_homelist:
+    pattern: /sql_home
+    defaults: {_controller:SitebolgBundle:ArticleSql:homesql}
+
+bolg_sql_introductionlist:
+    pattern: /sql_introduction
+    defaults: {_controller:SitebolgBundle:ArticleSql:introducesql}
+
+
+bolg_sql_testlist:
+    pattern: /sql_test
+    defaults: {_controller:SitebolgBundle:ArticleSql:testsql}
+
+
+#PhpArticle route
+
+
+
+bolg_php_homelist:
+    pattern: /php_home
+    defaults: {_controller:SitebolgBundle:ArticlePhp:homephp}
+
+bolg_php_introductionlist:
+    pattern: /php_introduction
+    defaults: {_controller:SitebolgBundle:ArticlePhp:introducephp}
+
+
+bolg_php_testlist:
+    pattern: /php_test
+    defaults: {_controller:SitebolgBundle:ArticlePhp:testphp}
+
+
+#AspArticle route
+
+
+
+bolg_asp_homelist:
+    pattern: /asp_home
+    defaults: {_controller:SitebolgBundle:ArticleAsp:homeasp}
+
+bolg_asp_introductionlist:
+    pattern: /asp_introduction
+    defaults: {_controller:SitebolgBundle:ArticleAsp:introduceasp}
+
+
+bolg_asp_testlist:
+    pattern: /asp_test
+    defaults: {_controller:SitebolgBundle:ArticleAsp:testasp}
+
+
+#NodejsArticle route
+
+
+
+bolg_nodejs_homelist:
+    pattern: /nodejs_home
+    defaults: {_controller:SitebolgBundle:ArticleNodejs:homenodejs}
+
+bolg_nodejs_introductionlist:
+    pattern: /nodejs_introduction
+    defaults: {_controller:SitebolgBundle:ArticleNodejs:introducenodejs}
+
+
+bolg_nodejs_testlist:
+    pattern: /nodejs_test
+    defaults: {_controller:SitebolgBundle:ArticleNodejs:testnodejs}
+
+
+#XmlArticle route
+
+
+
+bolg_xml_homelist:
+    pattern: /xml_home
+    defaults: {_controller:SitebolgBundle:ArticleXml:homexml}
+
+bolg_xml_introductionlist:
+    pattern: /xml_introduction
+    defaults: {_controller:SitebolgBundle:ArticleXml:introducexml}
+
+
+bolg_xml_testlist:
+    pattern: /xml_test
+    defaults: {_controller:SitebolgBundle:ArticleXml:testxml}
+
+
+#AjaxArticle route
+
+
+
+bolg_ajax_homelist:
+    pattern: /ajax_home
+    defaults: {_controller:SitebolgBundle:ArticleAjax:homeajax}
+
+bolg_angularjs_introductionlist:
+    pattern: /ajax_introduction
+    defaults: {_controller:SitebolgBundle:ArticleAjax:introduceajax}
+
+
+bolg_ajax_testlist:
+    pattern: /ajax_test
+    defaults: {_controller:SitebolgBundle:ArticleAjax:testajax}

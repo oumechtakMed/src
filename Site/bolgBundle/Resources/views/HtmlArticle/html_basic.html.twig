@@ -1,0 +1,167 @@
+
+{% extends "::tuto_html.html.twig" %}
+
+
+{%block title%}Html Basic{% endblock %}
+
+{% block html_content %}
+<h1 style="color:red">HTML Basic Examples</h1>
+								<ul class="w3-pagination w3-border w3-round w3-teal" style="width:100%">
+								<li><a href="{{path('bolg_html_introductionlist')}}" style="float: left" >&#10094; Previous Chapter</a></li>
+								<li><a href="{{path('bolg_html_elementslist')}}" style="float: right" >Next Chapter&#10095;</a></li>
+								</ul>
+					<br><br>
+					
+					<p style="margin-left:0%;text-align: justify;">
+							Don't worry if these examples use tags you have not learned.
+
+							You will learn about them in the next chapters.
+
+
+					</p> 
+                    <h2>	&clubs; HTML Documents: </h2>
+
+					<p style="margin-left:0%;text-align: justify;">
+								All HTML documents must start with a type declaration: &lt;!DOCTYPE html>.<br>
+
+								The HTML document itself begins with &lt;html> and ends with &lt;/html>.<br>
+
+								The visible part of the HTML document is between &lt;body> and &lt;/body>.<br>
+
+
+					</p> 
+					
+				    <h3>- Example:</h3>
+					
+					
+				
+					<p style="margin-left:0%;text-align: justify;">
+								HTML tags are keywords (tag names) surrounded by angle brackets:
+
+								&lt;tagname> content &lt;/tagname>
+								HTML tags normally come in pairs like &lt;p> and &lt;/p>
+								The first tag in a pair is the start tag, the second tag is the end tag
+								The end tag is written like the start tag, but with a slash before the tag name
+
+						
+					</p>
+					
+					<table class="a">
+					<tr>
+					   <td class="b">
+						
+									&lt;!DOCTYPE html&gt;<br>
+									&lt;html><br>
+									&lt;body><br>
+
+									&lt;h1>My First Heading&lt;/h1><br>
+
+									&lt;p>My first paragraph.&lt;/p><br>
+
+									&lt;/body><br>
+									&lt;/html><br>
+						
+					   
+					   </td>
+					</tr>
+					</table>
+					<h2>	&clubs; HTML Headings:</h2>
+					
+					<p style="margin-left:0%;text-align: justify;">
+								HTML headings are defined with the &lt;h1> to &lt;h6> tags:
+                      
+					</p>
+					 <h3>- Example:</h3>
+					<table class="a">
+					<tr>
+					   <td class="b">
+						
+									
+									&lt;h1>This is a heading</h1><br>
+									&lt;h2>This is a heading</h2><br>
+									&lt;h3>This is a heading</h3><br>
+
+					   
+					   </td>
+					</tr>
+					</table>
+					
+					
+					<h2>	&clubs; HTML Paragraphs:</h2>
+					
+					<p style="margin-left:0%;text-align: justify;">
+								HTML paragraphs are defined with the &lt;p> tag: 
+                      
+					</p>
+					 <h3>- Example:</h3>
+					<table class="a">
+					<tr>
+					   <td class="b">
+						
+									
+									
+									&lt;p>This is a paragraph.&lt;/p><br>
+									&lt;p>This is another paragraph.&lt;/p><br>
+
+					   
+					   </td>
+					</tr>
+					</table>
+					
+					
+					<h2>	&clubs; HTML Links:</h2>
+					
+					<p style="margin-left:0%;text-align: justify;">
+					            HTML links are defined with the &lt;a> tag:
+							
+                      
+					</p>
+					 <h3>- Example:</h3>
+					<table class="a">
+					<tr>
+					   <td class="b">
+						
+									
+									
+									&lt;a href="http://www.TutorialMe.com">This is a link&lt;/a>
+
+					   
+					   </td>
+					</tr>
+					</table>
+					<p>The link's destination is specified in the href attribute. 
+
+					Attributes are used to provide additional information about HTML elements.</p>
+					
+					<h2>	&clubs; HTML Images:</h2>
+					
+					<p style="margin-left:0%;text-align: justify;">
+						HTML images are defined with the &lt;img> tag.
+
+						The source file (src), alternative text (alt), and size (width and height) are provided as attributes:
+					           
+							
+                      
+					</p>
+					 <h3>- Example:</h3>
+					<table class="a">
+					<tr>
+					   <td class="b">
+						
+									
+									
+								&lt;img src="TutorialMe.jpg" alt="TutorialMe.com" width="104" height="142">
+
+					   
+					   </td>
+					</tr>
+					</table>
+					<br><br>
+					<ul class="w3-pagination w3-border w3-round w3-teal" style="width:100%">
+								<li><a href="{{path('bolg_html_introductionlist')}}" style="float: left" >&#10094; Previous Chapter</a></li>
+								<li><a href="{{path('bolg_html_elementslist')}}" style="float: right" >Next Chapter&#10095;</a></li>
+								</ul>
+					<br><br>
+					
+					
+					{% endblock %}

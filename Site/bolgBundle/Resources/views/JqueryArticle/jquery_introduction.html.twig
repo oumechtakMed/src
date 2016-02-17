@@ -1,0 +1,77 @@
+
+{% extends "::tuto_jquery.html.twig" %}
+
+{%block title%}jQuery Introduction{% endblock %}
+
+
+{% block html_content %}
+<h1 style="color:red">jQuery Introduction</h1>
+								<ul class="w3-pagination w3-border w3-round w3-teal" style="width:100%">
+								<li><a href="{{path('bolg_jquery_homelist')}}" style="float: left" >&#10094; Previous Chapter</a></li>
+								<li><a href="{{path('bolg_html_basiclist')}}" style="float: right" >Next Chapter&#10095;</a></li>
+								</ul>
+					<br><br>
+					<h2>	&clubs; jQuery Introduction: </h2>
+					<p style="margin-left:0%;text-align: justify;">
+							The purpose of jQuery is to make it much easier to use JavaScript on your website.	
+								
+					</p> 
+                    <h2>	&clubs; What You Should Already Know? </h2>
+					<p style="margin-left:0%;text-align: justify;">
+									Before you start studying jQuery, you should have a basic knowledge of:<br>
+
+									&bull; HTML<br>
+									&bull; CSS<br>
+									&bull; JavaScript<br>
+									If you want to study these subjects first, find the tutorials on our <a href="{{path('bolg_home')}}" style="color:blue">Home page<a/>.
+								
+					</p>
+					<h2>	&clubs; What is jQuery?</h2>
+					<p style="margin-left:0%;text-align: justify;">
+								jQuery is a lightweight, "write less, do more", JavaScript library.<br>
+
+								The purpose of jQuery is to make it much easier to use JavaScript on your website.<br>
+
+								jQuery takes a lot of common tasks that require many lines of JavaScript code to accomplish, and wraps them into methods that you can call with a single line of code.<br>
+
+								jQuery also simplifies a lot of the complicated things from JavaScript, like AJAX calls and DOM manipulation.<br>
+
+								The jQuery library contains the following features:<br>
+
+												&bull; HTML/DOM manipulation<br>
+												&bull; CSS manipulation<br>
+												&bull; HTML event methods<br>
+												&bull; Effects and animations<br>
+												&bull; AJAX<br>
+												&bull; Utilities<br>
+												<b>Tip</b>: In addition, jQuery has plugins for almost any task out there.
+					</p>
+					
+					<h2>	&clubs; Why jQuery?</h2>
+					<p style="margin-left:0%;text-align: justify;">
+													There are lots of other JavaScript frameworks out there, but jQuery seems to be the most popular, and also the most extendable.
+
+													Many of the biggest companies on the Web use jQuery, such as:
+
+													&bull;Google
+													&bull;Microsoft
+													&bull;IBM
+													&bull;Netflix
+						
+					</p>
+					
+					<h2>	&clubs; Will jQuery work in all browsers?</h2>
+					
+					<p style="margin-left:0%;text-align: justify;">
+								The jQuery team knows all about cross-browser issues, and they have written this knowledge into the jQuery library. jQuery will run exactly the same in all major browsers, including Internet Explorer 6!
+
+                      
+					</p>
+					<ul class="w3-pagination w3-border w3-round w3-teal" style="width:100%">
+								<li><a href="{{path('bolg_jquery_homelist')}}" style="float: left" >&#10094; Previous Chapter</a></li>
+								<li><a href="{{path('bolg_html_basiclist')}}" style="float: right" >Next Chapter&#10095;</a></li>
+								</ul>
+					<br><br>
+					
+					
+					{% endblock %}

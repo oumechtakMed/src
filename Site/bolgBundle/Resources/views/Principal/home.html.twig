@@ -1,0 +1,269 @@
+{% extends "::tuto_principal.html.twig" %}
+
+{%block title%}TutorialMe{% endblock %}
+								{% block pricinpal_content %}		
+								<style>
+								
+								   .w3-modal-content{
+								   cursor:pointer;
+								   cursor:zoom-out;
+								   }
+								   
+								   .nn{
+								   
+								   width:100%;
+								   cursor:pointer;
+								   cursor:zoom-in;
+								   }
+								
+								</style>
+                          <br><br><br>
+						  
+								<table style="width:100%">
+								<tr>
+								<td><center><a href="{{path('bolg_html_homelist')}}"><b>Learn Html</b></a><div class="w3-card-12" style="width:80%">
+								<img class="nn" src="{{ asset('bundles/hoa.jpg') }}" style="width:100%" onclick="document.getElementById('modal01').style.display='block'">
+
+								<div id="modal01" class="w3-modal" onclick="this.style.display='none'">
+								<img class="w3-modal-content" src="{{asset('bundles/hoa.jpg') }}" >
+								</div>
+								
+								<div class="w3-container">
+								<center><p>Start Learning it from <a href="{{path('bolg_html_homelist')}}" style="color:blue"><b>here</b></a></p></center>
+								</div>
+								</div></center></td>
+								<td><center><a href="{{path('bolg_jquery_homelist')}}"><b>Learn jQuery</b></a><div class="w3-card-12" style="width:80%">
+								<img class="nn" src="{{ asset('bundles/hop.jpg')}}" style="width:100%" onclick="document.getElementById('modal02').style.display='block'">
+
+								<div id="modal02" class="w3-modal" onclick="this.style.display='none'">
+								<img class="w3-modal-content" src="{{ asset('bundles/hop.jpg')}}" >
+								</div>
+								
+								<div class="w3-container">
+								<center><p>Start Learning it from <a href="{{path('bolg_jquery_homelist')}}" style="color:blue"><b>here</b></a></p></center>
+								</div>
+								</div></center></td>
+								<td><center><a href="{{path('bolg_javascript_homelist')}}"><b>Learn JavaScript</b></a><div class="w3-card-12" style="width:80%">
+								<img class="nn" src="{{ asset('bundles/hob.jpg')}}" style="width:100%" onclick="document.getElementById('modal03').style.display='block'">
+
+								<div id="modal03" class="w3-modal" onclick="this.style.display='none'">
+								<img class="w3-modal-content" src="{{ asset('bundles/hob.jpg')}}" >
+								</div>
+								
+								<div class="w3-container">
+								<center><p>Start Learning it from <a href="{{path('bolg_javascript_homelist')}}" style="color:blue"><b>here</b></a></p></center>
+								</div>
+								</div></center></td>
+								
+								</tr>
+								<tr>
+								<td><br><br><center><a href="{{path('bolg_css_homelist')}}"><b>Learn CSS</b></a><div class="w3-card-12" style="width:80%">
+								<img class="nn" src="{{ asset('bundles/hol.jpg')}}" style="width:100%;cursor:pointer;cursor:zoom-in;" onclick="document.getElementById('modal038').style.display='block'">
+
+								<div id="modal038" class="w3-modal" onclick="this.style.display='none'">
+								<img class="w3-modal-content" src="{{ asset('bundles/hol.jpg')}}" style="cursor:pointer;cursor:zoom-out;">
+								</div>
+								
+								<div class="w3-container">
+								<center><p>Start Learning it from <a href="{{path('bolg_css_homelist')}}" style="color:blue"><b>here</b></a></p></center>
+								</div>
+								</div></center></td>
+								<td><br><br><center><a href="{{path('bolg_w3css_homelist')}}"><b>Learn W3.CSS</b></a><div class="w3-card-12" style="width:80%">
+								<img class="nn" src="{{ asset('bundles/hod.jpg')}}" style="width:100%" onclick="document.getElementById('modal0388').style.display='block'">
+
+								<div id="modal0388" class="w3-modal" onclick="this.style.display='none'">
+								<img class="w3-modal-content" src="{{ asset('bundles/hod.jpg')}}" >
+								</div>
+								
+								<div class="w3-container">
+								<center><p>Start Learning it from <a href="{{path('bolg_w3css_homelist')}}" style="color:blue"><b>here</b></a></p></center>
+								</div>
+								</div></center></td>
+								<td><br><br><center><a href="{{path('bolg_bootstrap_testlist')}}"><b>Learn Bootstrap</b></a><div class="w3-card-12" style="width:80%">
+								<img class="nn" src="{{ asset('bundles/hon.jpg')}}" style="width:100%;cursor:pointer;cursor:zoom-in;" onclick="document.getElementById('modal0738').style.display='block'">
+
+								<div id="modal0738" class="w3-modal" onclick="this.style.display='none'">
+								<img class="w3-modal-content" src="{{ asset('bundles/hon.jpg')}}" style="cursor:pointer;cursor:zoom-out;">
+								</div>
+								
+								<div class="w3-container">
+								<center><p>Start Learning it from <a href="{{path('bolg_bootstrap_testlist')}}" style="color:blue"><b>here</b></a></p></center>
+								</div>
+								</div></center></td>
+								</tr>
+								
+								
+								<tr>
+								<td><br><br><center><a href="{{path('bolg_jquerymobile_testlist')}}"><b>Learn JQueryMobile</b></a><div class="w3-card-12" style="width:80%">
+								<img class="nn" src="{{ asset('bundles/hop1.jpg')}}" style="width:100%;cursor:pointer;cursor:zoom-in;" onclick="document.getElementById('modal03888').style.display='block'">
+
+								<div id="modal03888" class="w3-modal" onclick="this.style.display='none'">
+								<img class="w3-modal-content" src="{{ asset('bundles/hop1.jpg')}}" style="cursor:pointer;cursor:zoom-out;">
+								</div>
+								
+								<div class="w3-container">
+								<center><p>Start Learning it from <a href="{{path('bolg_jquerymobile_testlist')}}" style="color:blue"><b>here</b></a></p></center>
+								</div>
+								</div></center></td>
+								<td><br><br><center><a href="{{path('bolg_angularjs_testlist')}}"><b>Learn AngularJs</b></a><div class="w3-card-12" style="width:80%">
+								<img class="nn" src="{{ asset('bundles/hop2.jpg')}}" style="width:100%;cursor:pointer;cursor:zoom-in;" onclick="document.getElementById('modal038885').style.display='block'">
+
+								<div id="modal038885" class="w3-modal" onclick="this.style.display='none'">
+								<img class="w3-modal-content" src="{{ asset('bundles/hop2.jpg')}}" style="cursor:pointer;cursor:zoom-out;">
+								</div>
+								
+								<div class="w3-container">
+								<center><p>Start Learning it from <a href="{{path('bolg_angularjs_testlist')}}" style="color:blue"><b>here</b></a></p></center>
+								</div>
+								</div></center></td>
+								<td><br><br><center><a href="{{path('bolg_json_homelist')}}"><b>Learn JSON</b></a><div class="w3-card-12" style="width:80%">
+								<img class="nn" src="{{ asset('bundles/hop3.jpg')}}" style="width:100%;cursor:pointer;cursor:zoom-in;" onclick="document.getElementById('modal8').style.display='block'">
+
+								<div id="modal8" class="w3-modal" onclick="this.style.display='none'">
+								<img class="w3-modal-content" src="{{ asset('bundles/hop3.jpg')}}" style="cursor:pointer;cursor:zoom-out;">
+								</div>
+								
+								<div class="w3-container">
+								<center><p>Start Learning it from <a href="{{path('bolg_json_homelist')}}" style="color:blue"><b>here</b></a></p></center>
+								</div>
+								</div></center></td>
+								</tr>
+								
+								<tr>
+								<td><br><br>
+								<center><a href="{{path('bolg_canvas_testlist')}}"><b>Learn Canvas</b></a>
+								    <div class="w3-card-12" style="width:80%">
+								<img class="nn" src="{{ asset('bundles/hop4.jpg')}}" style="width:100%" onclick="document.getElementById('modal8999').style.display='block'">
+
+								<div id="modal8999" class="w3-modal" onclick="this.style.display='none'">
+								<img class="w3-modal-content" src="{{ asset('bundles/hop4.jpg')}}">
+								</div>
+								
+								<div class="w3-container">
+								<center><p>Start Learning it from <a href="{{path('bolg_canvas_testlist')}}" style="color:blue"><b>here</b></a></p></center>
+								</div>
+								</div></center>
+								</td>
+								<td><br><br>
+								<center><a href="{{path('bolg_svg_testlist')}}"><b>Learn SVG</b></a>
+								    <div class="w3-card-12" style="width:80%">
+								<img class="nn" src="{{ asset('bundles/hop5.jpg')}}" style="width:100%" onclick="document.getElementById('modal89992').style.display='block'">
+
+								<div id="modal89992" class="w3-modal" onclick="this.style.display='none'">
+								<img class="w3-modal-content" src="{{ asset('bundles/hop5.jpg')}}">
+								</div>
+								
+								<div class="w3-container">
+								<center><p>Start Learning it from <a href="{{path('bolg_svg_testlist')}}" style="color:blue"><b>here</b></a></p></center>
+								</div>
+								</div></center>
+								</td>
+								<td><br><br>
+								    <center><a href="{{path('bolg_googlemaps_testlist')}}"><b>Learn Google Maps</b></a>
+								    <div class="w3-card-12" style="width:80%">
+								<img class="nn" src="{{ asset('bundles/hop6.jpg')}}" style="width:100%" onclick="document.getElementById('modal899927').style.display='block'">
+
+								<div id="modal899927" class="w3-modal" onclick="this.style.display='none'">
+								<img class="w3-modal-content" src="{{ asset('bundles/hop6.jpg')}}">
+								</div>
+								
+								<div class="w3-container">
+								<center><p>Start Learning it from <a href="{{path('bolg_googlemaps_testlist')}}" style="color:blue"><b>here</b></a></p></center>
+								</div>
+								</div></center>
+								</td>
+								</tr>
+								
+								<tr>
+								<td><br><br>
+								<center><a href="{{path('bolg_sql_testlist')}}"><b>Learn SQL</b></a>
+								<div class="w3-card-12" style="width:80%">
+								   <img class="nn" src="{{ asset('bundles/hop7.jpg')}}" style="width:100%" onclick="document.getElementById('modal8999278').style.display='block'">
+
+								<div id="modal8999278" class="w3-modal" onclick="this.style.display='none'">
+								<img class="w3-modal-content" src="{{ asset('bundles/hop7.jpg')}}">
+								</div>
+								
+								<div class="w3-container">
+								<center><p>Start Learning it from <a href="{{path('bolg_sql_testlist')}}" style="color:blue"><b>here</b></a></p></center>
+								</div>
+								</div></center>
+								</td>
+								<td><br><br>
+								<center><a href="{{path('bolg_php_testlist')}}"><b>Learn PHP</b></a>
+								    <div class="w3-card-12" style="width:80%">
+								   <img class="nn" src="{{ asset('bundles/hop8.jpg')}}" style="width:100%" onclick="document.getElementById('modal89992786').style.display='block'">
+
+								<div id="modal89992786" class="w3-modal" onclick="this.style.display='none'">
+								<img class="w3-modal-content" src="{{ asset('bundles/hop8.jpg')}}">
+								</div>
+								
+								<div class="w3-container">
+								<center><p>Start Learning it from <a href="{{path('bolg_php_testlist')}}" style="color:blue"><b>here</b></a></p></center>
+								</div>
+								</div></center>
+								</td>
+								<td><br><br>
+								    <center><a href="{{path('bolg_asp_testlist')}}"><b>Learn ASP.NET</b></a>
+								    <div class="w3-card-12" style="width:80%">
+								   <img class="nn" src="{{ asset('bundles/hop9.jpg')}}" style="width:100%" onclick="document.getElementById('modal899927867').style.display='block'">
+
+								<div id="modal899927867" class="w3-modal" onclick="this.style.display='none'">
+								<img class="w3-modal-content" src="{{ asset('bundles/hop9.jpg')}}">
+								</div>
+								
+								<div class="w3-container">
+								<center><p>Start Learning it from <a href="{{path('bolg_asp_testlist')}}" style="color:blue"><b>here</b></a></p></center>
+								</div>
+								</div></center>
+								</td>
+								</tr>
+								
+								
+								<tr>
+								<td><br><br>
+								<center><a href="{{path('bolg_w3css_homelist')}}"><b>Learn Node.Js</b></a>
+								    <div class="w3-card-12" style="width:80%">
+								   <img class="nn" src="{{ asset('bundles/hop10.jpg')}}" style="width:100%" onclick="document.getElementById('modal8999278677').style.display='block'">
+
+								<div id="modal8999278677" class="w3-modal" onclick="this.style.display='none'">
+								<img class="w3-modal-content" src="{{ asset('bundles/hop10.jpg')}}">
+								</div>
+								
+								<div class="w3-container">
+								<center><p>Start Learning it from <a href="{{path('bolg_w3css_homelist')}}" style="color:blue"><b>here</b></a></p></center>
+								</div>
+								</div></center>
+								</td>
+								<td><br><br>
+								<center><a href="{{path('bolg_xml_homelist')}}"><b>Learn XML</b></a>
+								     <div class="w3-card-12" style="width:80%">
+								   <img class="nn" src="{{ asset('bundles/hop11.jpg')}}" style="width:100%" onclick="document.getElementById('modal89992786770').style.display='block'">
+
+								<div id="modal89992786770" class="w3-modal" onclick="this.style.display='none'">
+								<img class="w3-modal-content" src="{{ asset('bundles/hop11.jpg')}}">
+								</div>
+								
+								<div class="w3-container">
+								<center><p>Start Learning it from <a href="{{path('bolg_xml_homelist')}}" style="color:blue"><b>here</b></a></p></center>
+								</div>
+								</div></center>
+								</td>
+								<td><br><br>
+								    <center><a href="{{path('bolg_ajax_testlist')}}"><b>Learn Ajax</b></a>
+								     <div class="w3-card-12" style="width:80%">
+								   <img class="nn" src="{{ asset('bundles/hop12.jpg')}}" style="width:100%" onclick="document.getElementById('modal899927867707').style.display='block'">
+
+								<div id="modal899927867707" class="w3-modal" onclick="this.style.display='none'">
+								<img class="w3-modal-content" src="{{ asset('bundles/hop12.jpg')}}">
+								</div>
+								
+								<div class="w3-container">
+								<center><p>Start Learning it from <a href="{{path('bolg_ajax_testlist')}}" style="color:blue"><b>here</b></a></p></center>
+								</div>
+								</div></center>
+								</td>
+								</tr>
+								</table>
+								{% endblock %}
+						

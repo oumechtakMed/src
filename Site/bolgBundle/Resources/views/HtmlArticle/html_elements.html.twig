@@ -1,0 +1,201 @@
+
+{% extends "::tuto_html.html.twig" %}
+
+{%block title%}Html Elements{% endblock %}
+
+
+{% block html_content %}
+<h1 style="color:red">HTML Elements</h1>
+								<ul class="w3-pagination w3-border w3-round w3-teal" style="width:100%">
+								<li><a href="{{path('bolg_html_basiclist')}}" style="float: left" >&#10094; Previous Chapter</a></li>
+								<li><a href="{{path('bolg_html_testlist')}}" style="float: right" >Next Chapter&#10095;</a></li>
+								</ul>
+					<br><br>
+					<p style="margin-left:0%;text-align: justify;">
+								HTML documents are made up by HTML elements.
+					</p> 
+					<h2>	&clubs; HTML Elements</h2>
+					<p style="margin-left:0%;text-align: justify;">
+								HTML elements are written with a start tag, with an end tag, with the content in between:<br>
+								<b>&lt;tagname>content&lt;/tagname></b><br>
+								The HTML element is everything from the start tag to the end tag:<br>
+								&lt;p>My first HTML paragraph.&lt;/p>
+					</p> 
+					<center><img id="rr" src="{{ asset('bundles/html_elements_table.jpg')}}" style="width:100%"></center>
+					<p style="margin-left:0%;text-align: justify;">
+								Some HTML elements do not have an end tag.
+					</p>
+					
+                    <h2>	&clubs; Nested HTML Elements: </h2>
+					<p style="margin-left:0%;text-align: justify;">
+							HTML elements can be nested (elements can contain elements).<br>
+
+							All HTML documents consist of nested HTML elements.<br>
+
+							This example contains 4 HTML elements:
+					</p>
+					<h3>Example:</h3>
+					<table class="a">
+					<tr>
+					   <td class="b">
+						
+									&lt;!DOCTYPE html&gt;<br>
+									&lt;html&gt;<br>
+									&lt;head&gt;<br>
+									&lt;title&gt;Page Title&lt;/title&gt;<br>
+									&lt;/head&gt;<br>
+									&lt;body&gt;<br>
+
+									&lt;h1&gt;My First Heading&lt;/h1&gt;<br>
+									&lt;p&gt;My first paragraph.&lt;/p&gt;<br>
+
+									&lt;/body&gt;<br>
+									&lt;/html&gt;<br>
+						
+					   
+					   </td>
+					</tr>
+					</table>
+					
+					 <h2>	&clubs; HTML Example Explained: </h2>
+					
+					<p style="margin-left:0%;text-align: justify;">
+								The &lt;html> element defines the whole document.
+
+								It has a start tag &lt;html> and an end tag &lt;/html>.
+
+								The element content is another HTML element (the &lt;body> element).
+					</p>
+					
+					
+					<table class="a">
+					<tr>
+					   <td class="b">
+						
+									&lt;!DOCTYPE html&gt;<br>
+									&lt;html&gt;<br>
+									&lt;head&gt;<br>
+									&lt;title&gt;Page Title&lt;/title&gt;<br>
+									&lt;/head&gt;<br>
+									&lt;body&gt;<br>
+
+									&lt;h1&gt;My First Heading&lt;/h1&gt;<br>
+									&lt;p&gt;My first paragraph.&lt;/p&gt;<br>
+
+									&lt;/body&gt;<br>
+									&lt;/html&gt;<br>
+						
+					   
+					   </td>
+					</tr>
+					</table>
+					
+					<p style="margin-left:0%;text-align: justify;">
+								The &lt;body> element defines the document body.<br>
+
+								It has a start tag &lt;body> and an end tag &lt;/body>.<br>
+
+								The element content is two other HTML elements (&lt;h1> and &lt;p>).
+					</p>
+					<table class="a">
+					<tr>
+					   <td class="b">
+						
+							
+									&lt;body&gt;<br>
+
+									&lt;h1&gt;My First Heading&lt;/h1&gt;<br>
+									&lt;p&gt;My first paragraph.&lt;/p&gt;<br>
+
+									&lt;/body&gt;<br>
+								
+						
+					   
+					   </td>
+					</tr>
+					</table>
+					<p style="margin-left:0%;text-align: justify;">
+								The &lt;h1> element defines a heading.
+
+								It has a start tag &lt;h1> and an end tag &lt;/h1>.
+
+								The element content is: My First Heading.
+					</p>
+					<table class="a">
+					<tr>
+					   <td class="b">
+						
+							
+									&lt;p>My first paragraph.&lt;/p>
+								
+						
+					   
+					   </td>
+					</tr>
+					</table>
+					<h2>	&clubs; Don't Forget End Tag</h2>
+					<p style="margin-left:0%;text-align: justify;">
+								Some HTML elements will display correctly, even if you forget the end tag:
+					</p>
+					<h3>Example:</h3>
+					<table class="a">
+					<tr>
+					   <td class="b">
+						
+									&lt;!DOCTYPE html&gt;<br>
+									&lt;html&gt;<br>
+									&lt;head&gt;<br>
+									&lt;title&gt;Page Title&lt;/title&gt;<br>
+									&lt;/head&gt;<br>
+									&lt;body&gt;<br>
+
+									&lt;h1&gt;My First Heading&lt;/h1&gt;<br>
+									&lt;p&gt;My first paragraph.&lt;/p&gt;<br>
+
+									&lt;/body&gt;<br>
+									&lt;/html&gt;<br>
+						
+					   
+					   </td>
+					</tr>
+					</table>
+					<p style="margin-left:0%;text-align: justify;">
+								The example above works in all browsers, because the closing tag is considered optional.<br>
+
+								Never rely on this. It might produce unexpected results and/or errors if you forget the end tag.
+					</p>
+					<h2>	&clubs; Empty HTML Elements</h2>
+					<p style="margin-left:0%;text-align: justify;">
+								HTML elements with no content are called empty elements.<br>
+
+								&lt;br> is an empty element without a closing tag (the &lt;br> tag defines a line break).<br>
+
+								Empty elements can be "closed" in the opening tag like this: &lt;br />.<br>
+
+								HTML5 does not require empty elements to be closed. But if you want stricter validation, or you need to make your document readable by XML parsers, you should close all HTML elements.
+					</p>
+					<h2>	&clubs; HTML Tip: Use Lowercase Tags</h2>
+					<p style="margin-left:0%;text-align: justify;">
+						HTML tags are not case sensitive: &lt;P> means the same as &lt;p>.<br>
+
+						The HTML5 standard does not require lowercase tags, but W3C recommends lowercase in HTML4, and demands lowercase for stricter document types like XHTML.
+					</p>
+					<p style="margin-left:0%;text-align: justify;">
+						At W3Schools we always use lowercase tags.
+					</p>
+					
+					
+								<ul class="w3-pagination w3-border w3-round w3-teal" style="width:100%">
+								<li><a href="{{path('bolg_html_basiclist')}}" style="float: left" >&#10094; Previous Chapter</a></li>
+								<li><a href="{{path('bolg_html_basiclist')}}" style="float: right" >Next Chapter&#10095;</a></li>
+								</ul>
+					<br><br>
+					
+					
+					{% endblock %}
+					
+					
+					
+					   
+					
+				

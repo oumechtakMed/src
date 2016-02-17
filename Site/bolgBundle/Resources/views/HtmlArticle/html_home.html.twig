@@ -1,0 +1,80 @@
+
+{% extends "::tuto_html.html.twig" %}
+
+
+
+
+{%block title%}Html Home{% endblock %}
+
+{% block html_content %}
+<h1 style="color:red">HTML(5) Tutorial</h1>
+								<ul class="w3-pagination w3-border w3-round w3-teal" style="width:100%">
+								<li><a href="{{path('bolg_home')}}" style="float: left" >&#10094; TutorailMe Home</a></li>
+								<li><a href="{{path('bolg_html_introductionlist')}}" style="float: right" >Next Chapter&#10095;</a></li>
+								</ul>
+					<table>
+					     <tr>
+						      <td><img style="width:100%" src="{{ asset('bundles/html_logo.jpg')}}" /></td>
+							  <td><p style="margin-left:10%">With HTML you can create your own Web site.
+
+									This tutorial teaches you everything about HTML.
+
+									HTML is easy to learn - You will enjoy it.</p></td>
+						 </tr>
+					</table>
+					<h2>&#927; Examples in Every Chapter :</h2>
+					<p style="margin-left:0%;text-align: justify;">
+						This HTML tutorial contains hundreds of HTML examples.
+
+						With our online HTML editor, you can edit the HTML, and click on a button to view the result.
+					</p>
+                    <h3>- Example:</h3>
+					<table class="a">
+					<tr>
+					   <td class="b">
+						
+									&lt;!DOCTYPE html&gt;<br>
+									&lt;html&gt;<br>
+									&lt;head&gt;<br>
+									&lt;title&gt;Page Title&lt;/title&gt;<br>
+									&lt;/head&gt;<br>
+									&lt;body&gt;<br>
+
+									&lt;h1&gt;This is a Heading&lt;/h1&gt;<br>
+									&lt;p&gt;This is a paragraph.&lt;/p&gt;<br>
+
+									&lt;/body&gt;<br>
+									&lt;/html&gt;<br>
+						
+					   
+					   </td>
+					</tr>
+					</table>
+					<h2>&#927; HTML Examples:</h2>
+					<p style="margin-left:0%;text-align: justify;">
+						This HTML tutorial contains hundreds of HTML examples.
+
+						
+					</p>
+					
+					<h2>&#927; HTML Quiz Test:</h2>
+					<p style="margin-left:0%;text-align: justify;">
+						Test your HTML skills at W3Schools!
+
+						
+					</p>
+					
+					<h2>&#927; HTML References:</h2>
+					<p style="margin-left:0%;text-align: justify;">
+						At TutorialMe you will find complete references about tags, attributes, events, color names, entities, character-sets, URL encoding, language codes, HTTP messages, and more.
+
+						
+					</p>
+					<ul class="w3-pagination w3-border w3-round w3-teal" style="width:100%">
+								<li><a href="{{path('bolg_home')}}" style="float: left" >&#10094; TutorailMe Home</a></li>
+								<li><a href="{{path('bolg_html_introductionlist')}}" style="float: right" >Next Chapter&#10095;</a></li>
+								</ul>
+					<br><br>
+					
+					
+					{% endblock %}
